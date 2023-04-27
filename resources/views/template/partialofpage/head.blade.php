@@ -3,11 +3,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Dashboard - Tabler - Premium and Open Source dashboard template with responsive and high quality UI.</title>
     <!-- CSS files -->
-    <link href="./dist/css/tabler.min.css?1674944402" rel="stylesheet"/>
-    <link href="./dist/css/tabler-flags.min.css?1674944402" rel="stylesheet"/>
-    <link href="./dist/css/tabler-payments.min.css?1674944402" rel="stylesheet"/>
-    <link href="./dist/css/tabler-vendors.min.css?1674944402" rel="stylesheet"/>
-    <link href="./dist/css/demo.min.css?1674944402" rel="stylesheet"/>
+    <link href="{{ asset('dist/css/tabler.min.css?1674944402s') }}" rel="stylesheet"/>
+    <link href="{{ asset('dist/css/tabler-flags.min.css?1674s944402') }}" rel="stylesheet"/>
+    <link href="{{ asset('dist/css/tabler-payments.min.css?1s674944402') }}" rel="stylesheet"/>
+    <link href="{{ asset('dist/css/tabler-vendors.min.css?16s74944402') }}" rel="stylesheet"/>
+    <link href="{{ asset('dist/css/demo.min.css?1674944402') }}" rel="stylesheet"/>
     <style>
       @import url('https://rsms.me/inter/inter.css');
       :root {

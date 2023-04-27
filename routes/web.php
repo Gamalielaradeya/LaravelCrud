@@ -20,8 +20,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/member', [MemberController::class, 'index']);
-
+Route::get('/member', [MemberController::class, 'index'])->name('member/index');
+Route::get('/member/create', [MemberController::class, 'create'])->name('member/create');
+Route::post('/member', [MemberController::class, 'store'])->name('member/store');
+Route::get('/member/{id}/edit', [MemberController::class, 'edit'])->name('member/edit');
+Route::put('/member/{id}', [MemberController::class, 'update'])->name('member/update');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

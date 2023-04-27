@@ -1,5 +1,15 @@
 @extends('template/default')
 
+@php
+    $title = "Data Jemaat";
+    $preTitle= "View"
+@endphp
+
+
+@push('page-action')
+    <a href="{{ route('member/create')}}" class="btn btn-primary">Tambah Data</a>
+@endpush
+
 @section('content')
 <div class="card">
                   <div class="table-responsive">
@@ -25,7 +35,7 @@
                           <td>{{ $member -> bulan_lahir}}</td>
                           <td>{{ $member -> tahun_lahir}}</td>
                           <td>
-                            <a href="#">Edit</a>
+                            <a href="{{ route('member/edit', $member->id) }}">Edit</a>
                           </td>
                         </tr>
                         @endforeach
